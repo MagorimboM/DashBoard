@@ -20,7 +20,7 @@ function SideBar() {
             </div>
             <span className='border-b-[1px] border-gray-200 w-full p-3'></span>
             <div className='flex flex-col items-center justify-center'>
-                    <Link href='/dashboard'> <div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><VscDashboard size={20} /></div></Link>
+                    <Link href='/'> <div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><VscDashboard size={20} /></div></Link>
             </div>
             <div className='flex flex-col items-center justify-center'>
                     <Link href='/customers'><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><RiContactsFill /></div></Link>
@@ -29,7 +29,7 @@ function SideBar() {
                     <Link href='/orders'><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><HiOutlineShoppingBag size={20} /></div></Link>
             </div>
             <div className='flex flex-col items-center justify-center'>
-                    <Link href='/settings'><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><IoIosSettings size={20} /></div></Link>
+                    <Link href='/'><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><IoIosSettings size={20} /></div></Link>
                 </div>
                 
             </div>
