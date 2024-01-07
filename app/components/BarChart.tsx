@@ -1,16 +1,16 @@
 "use client"
 
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { Chart as chartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'; 
+import { Chart as chartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
-chartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend); 
+chartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const BarChart = () => {
-    
 
-    const [chartData, setChartData] = useState<any>({ datasets:[], labels:[] });
-    const [chartOptions, setChartOptions] = useState<any>({}); 
+
+    const [chartData, setChartData] = useState<any>({ datasets: [], labels: [] });
+    const [chartOptions, setChartOptions] = useState<any>({});
     useEffect(() => {
 
         setChartData({
@@ -36,18 +36,18 @@ const BarChart = () => {
                 responsive: true,
             }
 
-        }); 
-        
+        });
 
-    }, []); 
+
+    }, []);
 
 
 
     return (
-        <div className='w-full lg:h-[70vh] h-[30vh] m-auto p-4 border rounded-lg bg-white'>
-                <Bar className='' data={chartData} options={chartOptions} />
-            </div>   
-    ); 
-}; 
+        <div className='h-full w-full lg:h-[70vh] lg:h-[30vh] xl:w-full xl:h-full 2xl:w-full 2xl:h-full m-auto p-4 border rounded-lg bg-white'>
+            <Bar className='' data={chartData} options={chartOptions} />
+        </div>
+    );
+};
 
 export default BarChart; 

@@ -2,13 +2,16 @@ import React from 'react';
 import { Data } from '../database/Data';
 import { RiContactsFill } from "react-icons/ri";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import SideBar from '../components/SideBar';
 
 
 
 const customer = () => {
   return (
-    <main className='flex flex-col p-4 w-screen h-screen bg-gray-200 scroll overflow-scroll'>
+    <main className='flex flex-row  w-screen h-screen bg-gray-200 scroll overflow-scroll'>
+      <div><SideBar/></div>
       <div className='flex justify-between text-black'>
+        <div>
         <h2>Customers</h2>
         <h2>Welcome Back, Mark</h2>
       </div>
@@ -38,6 +41,7 @@ const customer = () => {
               </li>
             ))}
           </ul>
+        </div>
         </div>
       </div>
     </main>

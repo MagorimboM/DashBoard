@@ -4,7 +4,7 @@ import { FaShoppingBag } from 'react-icons/fa';
 
 const RecentOrder = () => {
     return (
-        <div className='scroll overflow-scroll w-full lg:h-[70vh] h-[30vh] m-auto p-4 border rounded-lg bg-white'>
+        <div className='scroll overflow-scroll h-full w-full lg:h-[70vh] lg:h-[30vh] xl:w-full xl:h-full 2xl:w-full 2xl:h-full m-auto p-4 border rounded-lg bg-white'>
 
             RecentOrder
             <ul>
