@@ -29,7 +29,7 @@ function SideBar() {
                     <Link href='/orders'><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><HiOutlineShoppingBag size={20} /></div></Link>
             </div>
             <div className='flex flex-col items-center justify-center'>
-                    <Link href='/'><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><IoIosSettings size={20} /></div></Link>
+                    <Link href=''><div className='bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer my-4 p-3 rounded-lg inline-block'><IoIosSettings size={20} /></div></Link>
                 </div>
                 
             </div>

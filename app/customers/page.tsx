@@ -8,21 +8,23 @@ import SideBar from '../components/SideBar';
 
 const customer = () => {
   return (
-    <main className='flex flex-row  w-screen h-screen bg-gray-200 scroll overflow-scroll'>
-      <div><SideBar/></div>
-      <div className='flex justify-between text-black'>
-        <div>
-        <h2>Customers</h2>
-        <h2>Welcome Back, Mark</h2>
+    <main className='flex flex-row  w-screen h-screen bg-gray-200'>
+      <div><SideBar /></div>
+
+      <div className='flex flex-col p-4 w-full '>
+        <div className='flex m-4 justify-between text-black'>
+
+          <h2>Customers</h2>
+          <h2>Welcome Back, Mark</h2>
+        </div>
+        <div className=' rounded-lg p-4 bg-white text-black grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
+        <span>Name</span>
+        <span className='sm:text-left text-right'>Email</span>
+        <span className='hidden md:grid'>Last Order</span>
+        <span className='hidden sm:grid'>Method</span>
       </div>
-      <div className=' p-4 '>
-        <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
-          <div className=' text-black my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
-            <span>Name</span>
-            <span className='sm:text-left text-right'>Email</span>
-            <span className='hidden md:grid'>Last Order</span>
-            <span className='hidden sm:grid'>Method</span>
-          </div>
+
+        <div className='w-full h-full scroll overflow-scroll p-4 border rounded-lg bg-white'>
           <ul>
             {Data.map((customer, id) => (
               <li key={id} className='bg-gray-50 hover:bg-gray-100 transition-color rounded-lg my-3 p-2 grid sm:grid-cols-3 grid-cols-2 md:grid-cols-4 items-center justify-between cursor-pointer'>
@@ -40,10 +42,9 @@ const customer = () => {
                 </div>
               </li>
             ))}
-          </ul>
+            </ul>
+          </div>
         </div>
-        </div>
-      </div>
     </main>
   );
 };

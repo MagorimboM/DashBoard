@@ -10,21 +10,20 @@ const Orders = () => {
 
 
     return (
-        <main className='flex w-screen h-screen bg-gray-200'>
+        <main className='flex flex-row  w-screen h-screen bg-gray-200'>
             <div id='sidebar'><SideBar /></div>
-            <div className=' flex flex-col h-full w-full'>
-                <div className='flex m-4 justify-between text-black'>
+            <div className=' flex flex-col p-4 h-full w-full'>
+                <div className='flex m-4 justify-between text-black justify-between'>
                     <h2>Orders</h2>
-                    <h2>Welcome, Mark</h2>
+                    <h2>Welcome Back, Mark</h2>
                 </div>
-                <div className='m-4 p-4 border rounded-lg bg-white overflow-y-auto '>
-                    <div className='text-black my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer '>
-                        <span>Order</span>
-                        <span>Status</span>
-                        <span className='hidden md:grid lg:grid'>Last Order</span>
-                        <span className='hidden md:grid lg:grid'>Method</span>
-                    </div>
-                    <div className='h-full w-full scroll overflow-scroll'>
+                <div className=' flex items-center justify-center justify-between cursor-pointer rounded-lg p-4 text-black bg-white grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2'>
+                    <span>Order</span>
+                    <span>Status</span>
+                    <span className='hidden md:grid lg:grid'>Last Order</span>
+                    <span className='hidden md:grid lg:grid'>Method</span>
+                </div>
+                <div className='w-full h-full scroll overflow-scroll p-4 border rounded-lg bg-white '>
                         <ul>
                             {Data.map((orders, id) => (
 
@@ -50,11 +49,8 @@ const Orders = () => {
                                 </li>
                             ))}
                         </ul>
-                    </div>
                 </div>
-
             </div>
-
         </main>
     );
 };
